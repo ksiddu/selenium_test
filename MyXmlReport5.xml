@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="siddukampli-mac" name="pytest" skipped="0" tests="2" time="20.068" timestamp="2021-09-08T19:10:30.791654"><testcase classname="testCases.test_login.Test_001_Login" name="test_homePageTitle" time="5.855"><failure message="assert False">self = &lt;testCases.test_login.Test_001_Login object at 0x10bb5ab38&gt;, setup = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="92cda5b8d5608c4373f704ba05c898f7")&gt;
+
+    def test_homePageTitle(self, setup):
+        self.driver = setup
+        self.driver.get(self.baseURL)
+        actual_title = self.driver.title
+        if actual_title=="Your store. Login1":
+            assert True
+            self.driver.close()
+        else:
+            self.driver.save_screenshot(self.screenshot_path + "/test_homePageTitle.png")
+            self.driver.close()
+&gt;           assert False
+E           assert False
+
+testCases/test_login.py:24: AssertionError</failure></testcase><testcase classname="testCases.test_login.Test_001_Login" name="test_login" time="14.057" /></testsuite></testsuites>

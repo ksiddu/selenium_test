@@ -1,0 +1,5 @@
+# Ignore .idea files
+.idea/
+venev/
+__pycache__/
+*.pyc
